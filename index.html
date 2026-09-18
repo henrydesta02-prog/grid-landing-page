@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Grid landing pages</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a {color: hsl(228, 45%, 44%); }
+    body{background-color:royalblue;}
+    .hero{color:white;
+    text-align:center;
+border-radius:2px;
+border:2px solid #b7d9e8;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+flex-direction:column;}
+    .stats{color:white;
+    border:2px solid #b7d9e8;
+  border-radius:2px;
+padding: 20px;
+min-width: none;
+position:relative;
+}
+.menu-btn{background: none;
+border: none;
+cursor:pointer;
+position:absolute;
+top:20px;
+right:20px;}
+.menu-btn span{display:block;
+width:15px;
+height:1px;
+background:black;
+margin:5px 0;}
+    #menu-toggle{display:none;}
+    #menu-toggle:checked ⁓ a{display: flex;}
+
+    h6,footer{color:white;}
+
+    nav a{color:white;
+    display:none;}
+
+    .roe{display: grid;
+    grid-template-columns:1fr 1fr;
+
+}
+
+    
+  .row{display:grid;
+  grid-template-columns:1fr 1fr;
+grid-template-rows: 1fr 1fr;}
+
+.stats h2{position:relative;
+  margin:0;
+  top:-5px;
+  left:285px;
+}
+.info{margin-top:auto;}
+.info h3{margin-bottom:5px;}
+.info p{margin-top:0;}
+.move{display:flex;
+justify-content: flex-end;
+position: relative;
+bottom:50px;}
+.span{color:whitesmoke;
+font-size:50px;
+text-align: center;}
+.stats span{position:absolute;
+top:10px;
+left:20px;
+font-size: 30px;}
+  </style>
+</head>
+<body>
+  <h6><span class="span">.</span>Bridge Collective</h6>
+    <section class="roe">
+        <div class="hero">
+          <h1>
+            A classroom <br>for every child.
+          </h1>
+          <p>We fund the schools, train the teachers, and<br> measure what works — so every child we reach<br> today becomes a graduate tomorrow.</p>
+        </div>
+      
+      <section class="row">
+        <div class="stats">
+          <h2 >2.4M</h2>
+          <div class="info">
+            <h3>Students reached</h3>
+            <p>Across 31 countries since 2011.</p>
+            <span>&#10023;</span>
+          </div>
+        </div>
+      
+
+      
+        <div class="stats">
+          <h2>1,284</h2>
+          <div class="info">
+            <h3>Schools partnered</h3>
+            <p>In 14 countries, from Kenya to Guatemala.</p>
+            <span>+</span>
+          </div>
+          
+        </div>
+      
+      
+        <div class="stats">
+          <h2>38K</h2>
+          <div class="info">
+            <h3>Teachers trained</h3>
+            <p>Equipped with modern tools and methodology.</p>
+            <span>→</span>
+          </div>
+        </div>
+        <div class="stats">
+          <h2>3.1×</h2>
+          <div class="info">
+            <h3>Graduation lift</h3>
+            <p>Partner schools outperform national averages 3x.</p>
+            <span>&#8599;</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+  <footer>
+    <p>© 2026 Bridge Collective</p>
+    <div class="move">
+      <p>Registered charity 12345678</p>
+    </div>
+  </footer>
+
+  <nav>
+    <input type="checkbox" id="menu-toggle">
+    <label class="menu-btn" for="menu-toggle"><span>-</span><span>-</span></button>
+    <a href="#">About</a>
+    <a href="#"> Work</a>
+    <a href="#">Partners</a>
+    <a href="#">Annual Report</a>
+    <a href="#">Donate</a>
+  </nav>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">HENRY OMONDI</a>.
+  </div>
+</body>
+</html>
